@@ -196,3 +196,4 @@ cython_debug/
 # JSON files
 *.json
 *_json/
+!vm1/results/*.json

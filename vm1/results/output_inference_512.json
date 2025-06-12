@@ -1,0 +1,485 @@
+{
+  "accuracy": 25.0,
+  "results": [
+    {
+      "id": "test_split-json_453",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/22654_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Uveitis, B)No diabetic retinopathy., C)Congenital cataracts, D)Central retinal vein occlusion",
+        "solution": "<answer> B </answer>",
+        "id": "test_split-json_453"
+      },
+      "ground_truth": "<answer> B </answer>",
+      "model_output": "A) Uveitis, B) No diabetic retinopathy, C) Congenital cataracts, D)",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_574",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/27577_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)No diabetic retinopathy., B)Central retinal vein occlusion, C)Conjunctivitis, D)Keratoconus",
+        "solution": "<answer> A </answer>",
+        "id": "test_split-json_574"
+      },
+      "ground_truth": "<answer> A </answer>",
+      "model_output": "A) No diabetic retinopathy. The image shows retinal changes consistent with other conditions, not diabetic retinopathy.",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_874",
+      "question": {
+        "image": "Images/Chest CT Scan/test/squamous.cell.carcinoma_left.hilum_T1_N2_M0_IIIa/000120 (3).png",
+        "problem": "What are the specific attributes of the cancer seen in this image? A)Neuroendocrine carcinoma of the left hilum, B)Squamous cell carcinoma of the right hilum, C)Metastatic carcinoma of the left hilum, D)Squamous cell carcinoma of the left hilum",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_874"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "The masses in this image appear to be:\n- Solid, well-defined nodules\n- Located in the upper lobe areas",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_708",
+      "question": {
+        "image": "Images/RadImageNet/cbd/usn298096.png",
+        "problem": "What structure is visualized in this ultrasound image? A)Inferior vena cava, B)Ovary, C)common bile duct, D)Appendix",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_708"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "The structure being visualized in this ultrasound image appears to be a tubular, anechoic (dark) structure. This",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_869",
+      "question": {
+        "image": "Images/Chest CT Scan/test/large.cell.carcinoma_left.hilum_T2_N2_M0_IIIa/000124 (2).png",
+        "problem": "What are the specific characteristics of the cancer observed in this image? A)Small cell carcinoma of the left hilum, B)Adenocarcinoma of the right hilum, C)Non-cancerous mass of the left hilum, D)Large cell carcinoma of the left hilum",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_869"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_1042",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/4/38325_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Conjunctivitis, B)Macular degeneration, C)Proliferative diabetic retinopathy., D)Uveitis",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_1042"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "B",
+      "extracted_answer": "B"
+    },
+    {
+      "id": "test_split-json_590",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/2503_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Retinal detachment, B)Age-related macular degeneration, C)Corneal ulcer, D)No diabetic retinopathy.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_590"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A) Retinal detachment, B) Age-related macular degeneration, C) No diabetic retinopathy, D)",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_259",
+      "question": {
+        "image": "Images/Fitzpatrick 17k/39f227f4c069feb4305e864f1a778d42.jpg",
+        "problem": "What type of abnormality is present in this image? A)Neoplastic, B)Traumatic, C)Inflammatory., D)Autoimmune",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_259"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "A) Neoplastic, B) Traumatic, C) Inflammatory, D) Autoimmune\n</answer>",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_922",
+      "question": {
+        "image": "Images/Yangxi/train_3939.png",
+        "problem": "Determine whether the eye axis in this image is horizontal or vertical? A)Tilted eye axis, B)Curved eye axis, C)Angled eye axis, D)Transverse eye axis",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_922"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_533",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/32891_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Corneal ulcer, B)Retinal detachment, C)Keratoconus, D)No diabetic retinopathy.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_533"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "<answer>D</answer>",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_896",
+      "question": {
+        "image": "Images/Yangxi/test_440.png",
+        "problem": "Determine whether the eye axis in this image is horizontal or vertical? A)Angled eye axis, B)Crooked eye axis, C)Transverse eye axis, D)Tilted eye axis",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_896"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "C",
+      "extracted_answer": "C"
+    },
+    {
+      "id": "test_split-json_173",
+      "question": {
+        "image": "Images/COVIDx CXR-4/test/MIDRC-RICORD-1C-SITE2-000045-76077-0.png",
+        "problem": "What abnormality is present in this image? A)Bronchitis, B)Tuberculosis, C)Asthma, D)COVID-19 positive",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_173"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "D",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_452",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/24831_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Age-related macular degeneration, B)Corneal ulcer, C)No diabetic retinopathy., D)Optic neuritis",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_452"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "C",
+      "extracted_answer": "C"
+    },
+    {
+      "id": "test_split-json_475",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/10175_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Optic neuritis, B)Retinal detachment, C)No diabetic retinopathy., D)Uveitis",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_475"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "C",
+      "extracted_answer": "C"
+    },
+    {
+      "id": "test_split-json_63",
+      "question": {
+        "image": "Images/RadImageNet/normal/abd-normal018406.png",
+        "problem": "What imaging method is utilized to obtain this picture? A)X-ray, B)Ultrasound, C)Electrocardiogram (ECG), D)CT",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_63"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_368",
+      "question": {
+        "image": "Images/CRC100k/NORM/NORM-IQCFTGQK.tif",
+        "problem": "What does the image depict in terms of mucosa type? A)Skin mucosa, B)Esophageal mucosa, C)Cardiac mucosa, D)Normal colonic mucosa",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_368"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "The image shows epithelial tissue with a layered structure. Let me reconsider each option:\n\nA) Skin mucosa - This would",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_703",
+      "question": {
+        "image": "Images/RadImageNet/cbd/usn044859.png",
+        "problem": "What part is shown in this ultrasound image? A)Pancreatic duct, B)Iliac artery, C)Thyroid, D)common bile duct",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_703"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "B",
+      "extracted_answer": "B"
+    },
+    {
+      "id": "test_split-json_402",
+      "question": {
+        "image": "Images/ALL Challenge/validation_data/C-NMC_test_prelim_phase_data/1621.bmp",
+        "problem": "What is the most likely diagnosis show in this image? A)Chronic lymphocytic leukemia, B)Acute myeloid leukemia, C)Multiple myeloma, D)Acute lymphoblastic leukemia",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_402"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "The image appears to show a histological section with a purple/violet staining pattern. The tissue appears to have a somewhat irregular",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_84",
+      "question": {
+        "image": "Images/Retinal OCT-C8/test/CNV/cnv_test_1248.jpg",
+        "problem": "Is there any anomaly apparent in this image? A)There is a significant abnormality present in this image., B)The image reveals a minor abnormality., C)The image suggests a potential abnormality., D)Choroidal Neovascularization (CNV)",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_84"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "<think>\nLet me analyze this OCT image step by step to identify any abnormalities.\n\nLooking at the image, I can see",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_1081",
+      "question": {
+        "image": "Images/Covid19 heywhale/Viral_Pneumonia/Viral Pneumonia (965).png",
+        "problem": "What content appears in this image? A)Muscle, B)Skin, C)Bone, D)Lung",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_1081"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "The image is a chest X-ray (PA view) showing the thoracic cavity. I can identify:\n\n1. Multiple curved",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_284",
+      "question": {
+        "image": "Images/Fitzpatrick 17k/aea33f41d93dbd5aa59131a57c001714.jpg",
+        "problem": "What is the classification of the anomaly in this image? A)Benign melanoma, B)Melanoma in situ, C)Malignant melanoma., D)Melanocytic tumor",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_284"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_57",
+      "question": {
+        "image": "Images/RadImageNet/normal/abd-normal016400.png",
+        "problem": "What modality is used to capture this image? A)X-ray, B)Angiography, C)PET scan, D)CT",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_57"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_627",
+      "question": {
+        "image": "Images/RadImageNet/post_op/foot053248.png",
+        "problem": "What was the imaging modality used to obtain the image? A)Echocardiogram, B)Endoscopy, C)X-ray, D)MRI",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_627"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A) Echocardiogram, B) Endoscopy, C) X-ray, D) MRI\n</think",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_964",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/32986_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Corneal ulcer, B)Central retinal vein occlusion, C)Conjunctivitis, D)No diabetic retinopathy.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_964"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "D",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_1195",
+      "question": {
+        "image": "Images/Retinal OCT-C8/test/MH/mh_test_1258.jpg",
+        "problem": "Which specific condition is depicted in the image? A)Retinal detachment, B)Cataracts, C)Color blindness, D)Macular Hole (MH)",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_1195"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "<answer>D</answer>",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_868",
+      "question": {
+        "image": "Images/Chest CT Scan/test/large.cell.carcinoma_left.hilum_T2_N2_M0_IIIa/000173 (2).png",
+        "problem": "What specific attributes can be observed in the cancer shown in this image? A)Adenocarcinoma of the right hilum, B)Metastatic lung cancer of the left hilum, C)Small cell carcinoma of the left hilum, D)Large cell carcinoma of the left hilum",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_868"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "<answer>D</answer>",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_1018",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/2/5019_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Advanced glaucoma., B)Mild diabetic retinopathy., C)Moderate diabetic retinopathy., D)Retinal detachment.",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_1018"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "<answer>C</answer>",
+      "extracted_answer": "C"
+    },
+    {
+      "id": "test_split-json_112",
+      "question": {
+        "image": "Images/Retinal OCT-C8/val/NORMAL/normal_val_1262.jpg",
+        "problem": "Is there any pathology evident in this image? A)The image does not provide enough information to determine if there is an abnormality., B)The image shows multiple abnormalities., C)The image indicates a potential abnormality that requires further investigation., D)No abnormality detected (normal)",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_112"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "C\n</think>\n\n<think>\nLet me analyze this fundus photograph systematically to identify any abnormalities.\n\nLooking at the image",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_325",
+      "question": {
+        "image": "Images/Fitzpatrick 17k/1695bd10a336ec55c2ef289b51b8b43a.jpg",
+        "problem": "What is the particular type of the anomaly displayed in this image? A)Harmless cutaneous., B)Metastatic melanocytic., C)Benign epithelial., D)Malignant epidermal.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_325"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "D",
+      "extracted_answer": "D"
+    },
+    {
+      "id": "test_split-json_414",
+      "question": {
+        "image": "Images/MHSMA/test/test_74.jpg",
+        "problem": "What imaging modality was used to capture this image? A)X-ray, B)microscopy., C)Angiogram, D)CT scan",
+        "solution": "<answer> B </answer>",
+        "id": "test_split-json_414"
+      },
+      "ground_truth": "<answer> B </answer>",
+      "model_output": "A) X-ray, B) microscopy, C) Angiogram, D) CT scan",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_826",
+      "question": {
+        "image": "Images/Mura/MURA-v1.1/valid/XR_ELBOW/patient11247/study1_negative/image2.png",
+        "problem": "What imaging technique was utilized to acquire this image? A)CT scan, B)Mammogram, C)Colonoscopy, D)X-ray",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_826"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_701",
+      "question": {
+        "image": "Images/RadImageNet/cbd/usn042703.png",
+        "problem": "Which structure is visible in this ultrasound image? A)Appendix, B)Ovary, C)Iliac artery, D)common bile duct",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_701"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "The structure visible in this ultrasound image appears to be a tubular structure with a central anechoic (dark) area and",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_50",
+      "question": {
+        "image": "Images/RadImageNet/normal/abd-normal028779.png",
+        "problem": "What type of imaging is utilized to obtain this picture? A)Ultrasound, B)Angiography, C)PET scan, D)CT",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_50"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_957",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/41241_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Central retinal vein occlusion, B)Corneal ulcer, C)No diabetic retinopathy., D)Congenital cataracts",
+        "solution": "<answer> C </answer>",
+        "id": "test_split-json_957"
+      },
+      "ground_truth": "<answer> C </answer>",
+      "model_output": "The image shows a normal fundoscopic examination with a clear view of the optic disc, blood vessels, and retinal architecture.",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_582",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/10947_right.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Age-related macular degeneration, B)Glaucoma, C)Conjunctivitis, D)No diabetic retinopathy.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_582"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A) Age-related macular degeneration, B) Glaucoma, C) Conjunctivitis, D)",
+      "extracted_answer": null
+    },
+    {
+      "id": "test_split-json_956",
+      "question": {
+        "image": "Images/Diabetic Retinopathy/0/18579_left.jpeg",
+        "problem": "What is the specific abnormality present in this image? A)Age-related macular degeneration, B)Optic neuritis, C)Congenital cataracts, D)No diabetic retinopathy.",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_956"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_863",
+      "question": {
+        "image": "Images/Chest CT Scan/test/adenocarcinoma_left.lower.lobe_T2_N0_M0_Ib/000161 (4).png",
+        "problem": "What specific attributes can be observed in the cancer depicted in this image? A)Benign lung nodule of the left lower lobe, B)Adenocarcinoma of the right upper lobe, C)Carcinoid tumor of the right lower lobe, D)Adenocarcinoma of the left lower lobe",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_863"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "<answer>B</answer>",
+      "extracted_answer": "B"
+    },
+    {
+      "id": "test_split-json_1139",
+      "question": {
+        "image": "Images/OLIVES/train/Prime_FULL_Prime_FULL_02-041_W48_OS_fundus_W48.tif",
+        "problem": "Is this the oculus dexter or oculus sinister? A)right eye, B)left eye",
+        "solution": "<answer> B </answer>",
+        "id": "test_split-json_1139"
+      },
+      "ground_truth": "<answer> B </answer>",
+      "model_output": "A",
+      "extracted_answer": "A"
+    },
+    {
+      "id": "test_split-json_1205",
+      "question": {
+        "image": "Images/Retinal OCT-C8/test/AMD/amd_test_1344.jpg",
+        "problem": "What can be identified in this image as the specific abnormality? A)Cataract, B)Glaucoma, C)Diabetic Retinopathy, D)Age-related Macular Degeneration (AMD)",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_1205"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "C",
+      "extracted_answer": "C"
+    },
+    {
+      "id": "test_split-json_726",
+      "question": {
+        "image": "Images/RadImageNet/cbd/usn043782.png",
+        "problem": "What part is shown in this ultrasound image? A)Fallopian tube, B)Pancreas, C)Large intestine, D)common bile duct",
+        "solution": "<answer> D </answer>",
+        "id": "test_split-json_726"
+      },
+      "ground_truth": "<answer> D </answer>",
+      "model_output": "C",
+      "extracted_answer": "C"
+    }
+  ]
+}
