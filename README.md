@@ -27,7 +27,7 @@ All scripts rely on the following repositories being in your `$HOME` directory.
 - [OmniMedVQA](https://huggingface.co/datasets/foreverbeliever/OmniMedVQA/tree/main)
 - [Med-R1 (Github)](https://github.com/Yuxiang-Lai117/Med-R1/)
 
-Do some initial setup and process the `output.json` that you get from running Med-R1.
+Do some initial setup and process the `output.json` that you get from running Med-R1 in `replication/Med_R1.ipynb`.
 ```bash
 # Start in the $REPO_ROOT.
 cd $REPO_ROOT
@@ -76,6 +76,9 @@ Create a new huggingface dataset at [HF-Create a new dataset repository](https:/
 Then, upload the `verified_reasoning_traces.json` to the dataset directory.
 
 Once we have a dataset, we can SFT the model. Run the `training/SFT.ipynb` script in Colab using an A100 GPU runtime.
+This will also auto-upload a new model called `vm1-sft`.
+
+We can now refer to the new model in `inference/Inference.ipynb` and begin to run queries on it.
 
 ### Models and Data
 | Model       | Base Model           | Training Data                                     | Link                                             |
@@ -84,7 +87,65 @@ Once we have a dataset, we can SFT the model. Run the `training/SFT.ipynb` scrip
 
 ### Inference
 
-vm1 can be directly inferenced with the following snippet.
+vm1 can be directly inferenced with the following snippet, similar to Med-R1's inferencing code.
 ```python
+from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, AutoTokenizer
 
+MODEL_PATH="avuong/vm1-sft"
+BASE_PATH="OmniMedVQA/"
+QUESTION_TEMPLATE = "{Question} First output the thinking process in <think> </think> and final choice (A, B, C, D ...) in <answer> </answer> tags."
+
+model = Qwen2VLForConditionalGeneration.from_pretrained(
+    MODEL_PATH,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+
+processor = AutoProcessor.from_pretrained(MODEL_PATH)
+
+i = {
+    "image": "Images/Chest CT Scan/test/adenocarcinoma_left.lower.lobe_T2_N0_M0_Ib/000139 (9).png",
+    "problem": "What imaging technique is employed for obtaining this image? A)Mammogram, B)Positron emission tomography (PET), C)CT, D)Fluoroscopy",
+    "solution": "<answer> C </answer>"
+}
+
+message = {
+    "role": "user",
+    "content": [
+        {
+            "type": "image",
+            "image": f"file://{BASE_PATH}{i['image']}"
+        },
+        {
+            "type": "text",
+            "text": QUESTION_TEMPLATE.format(Question=i['problem'])
+        }
+    ]
+}
+
+image_inputs, video_inputs = process_vision_info(message)
+inputs = processor(
+    text=text,
+    images=image_inputs,
+    videos=video_inputs,
+    padding=True,
+    return_tensors="pt",
+)
+inputs = inputs.to("cuda")
+
+# Inference: Generation of the output
+generated_ids = model.generate(
+    **inputs,
+    use_cache=True,
+    max_new_tokens=max_new_tokens,
+    do_sample=False)
+
+generated_ids_trimmed = [
+    out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+]
+batch_output_text = processor.batch_decode(
+    generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+)
+
+print(batch_output_text)
 ```
