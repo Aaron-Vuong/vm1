@@ -94,6 +94,7 @@ from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, AutoTok
 MODEL_PATH="avuong/vm1-sft"
 BASE_PATH="OmniMedVQA/"
 QUESTION_TEMPLATE = "{Question} First output the thinking process in <think> </think> and final choice (A, B, C, D ...) in <answer> </answer> tags."
+max_new_tokens = 2048
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
     MODEL_PATH,
